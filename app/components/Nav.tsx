@@ -23,7 +23,9 @@ function Nav({}: Props) {
           <Link href={"/"}>
             <WidgetsIcon
               className={`text-3xl ${
-                usePathname() == "/" ? "text-white" : "text-superlight"
+                usePathname() == "/"
+                  ? "text-white"
+                  : "text-superlight hover:text-white"
               }`}
             />
           </Link>
@@ -32,7 +34,9 @@ function Nav({}: Props) {
           <Link href={"/movies"}>
             <LocalMoviesIcon
               className={`text-3xl ${
-                usePathname() == "/movies" ? "text-white" : "text-superlight"
+                usePathname() == "/movies"
+                  ? "text-white"
+                  : "text-superlight hover:text-white"
               }`}
             />
           </Link>
@@ -41,7 +45,9 @@ function Nav({}: Props) {
           <Link href={"/tv"}>
             <LiveTvIcon
               className={`text-3xl ${
-                usePathname() == "/tv" ? "text-white" : "text-superlight"
+                usePathname() == "/tv"
+                  ? "text-white"
+                  : "text-superlight hover:text-white"
               }`}
             />
           </Link>
@@ -50,7 +56,9 @@ function Nav({}: Props) {
           <Link href={"/saved"}>
             <BookmarkIcon
               className={`text-3xl ${
-                usePathname() == "/saved" ? "text-white" : "text-superlight"
+                usePathname() == "/saved"
+                  ? "text-white"
+                  : "text-superlight hover:text-white"
               }`}
             />
           </Link>
