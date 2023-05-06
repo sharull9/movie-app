@@ -14,7 +14,7 @@ type Props = {};
 function Nav({}: Props) {
   usePathname();
   return (
-    <header className="bg-secondary rounded-3xl p-5">
+    <header className="w-[5%] bg-secondary rounded-3xl p-5">
       <div className="text-red-700 flex justify-center items-center">
         <MovieIcon className="text-5xl" />
       </div>
