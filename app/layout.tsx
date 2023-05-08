@@ -13,10 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex p-8 h-screen w-full relative bg-primary text-white/[10] overflow-x-hidden">
+      <body className="flex p-5 lg:p-8 flex-col lg:flex-row h-screen w-full relative bg-primary text-white/[10] overflow-x-hidden">
         <Nav />
         {children}
-        <div className="absolute w-full h-1/6 bg-gradient-to-t from-black from-10% to-white/0 to-100% bottom-0 left-0"></div>
+        <div className="fixed w-full h-1/6 bg-gradient-to-t from-black from-10% to-white/0 to-100% bottom-0 left-0"></div>
       </body>
     </html>
   );
