@@ -7,7 +7,7 @@ const mont = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 export default function Home() {
   return (
     <div className={`${mont.className} flex-1 px-5 text-white`}>
-      <div className="rounded-3xl border border-slate-400 py-3 px-5 flex items-center">
+      <div className="rounded-3xl border border-slate-400 py-3 px-3 flex items-center">
         <SearchIcon />
         <input
           type="search"
